@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Poppins&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Alata;
+}
+.container{
+    width: 100%;
+    height: 1500px;
+    
+}
+
+.top{
+    height: 700px;
+    width: 100%;
+    background-image: url(images/desktop/image-hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+nav{
+    background: #222;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: white;
+}
+a.decorate{
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+}
+a.decorate::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: width 0.3s;
+}
+a.decorate:hover::after{
+    width: 50%;
+}
+.menu li{
+    font-size: 16px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+}
+
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+/* .logo{
+    width: 30%;
+} */
+.logoImage{
+    width: 150px;
+}
+/* .listItems{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    
+} */
+.toggle{
+    order: 1;
+    cursor: pointer;
+}
+.item{
+    order: 2;
+    width: 100%;
+    height: cover;
+    /* display: none; */
+}
+.item.active{
+    display: block;
+}
+
+.bars{
+    background: white;
+    display: inline-block;
+    height: 2px;
+    width: 28px;
+    position: relative;
+}
+
+.bars::before,.bars::after{
+    background: white;
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 28px;
+    position: absolute;
+}
+
+.bars::before{
+    top: 8px;
+}
+
+.bars::after{
+    top: -8px;
+}
+
+
+
+
+
+
+@media all and (min-width: 768px){
+
+    .top{
+        height: 700px;
+        width: 100%;
+        background-image: url(images/desktop/image-hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 140px;
+        padding-right: 140px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item{
+        display: block;
+        width: auto;
+        order: 1;
+    }
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex: 1;
+        order: 0;
+    }
+    .toggle{
+        display: none;
+    }
+
+    .menu li{
+        padding: 20px 13px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+    .top{
+        height: 700px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+    .menu{
+        justify-content: center;
+        
+    }
+    .logo{
+        flex: 1;
+    }
+    li .item{
+        padding: 20px 0px;
+    }
+
+
+}
