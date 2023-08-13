@@ -6,6 +6,7 @@
     <title>Loop Studio</title>
     <link rel="stylesheet" href="new style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/jquery-3.6.0.min.js">
 </head>
 <body>
     <div class="container">
@@ -45,7 +46,7 @@
 
         <div class="middle">
             <div class="right">
-                <img src="images/desktop/image-interactive.jpg" alt="">
+                <img src="images/desktop/image-interactive.jpg" alt="" class="interactive">
             </div>
             <div class="left">
                 <div class="middletext">
@@ -90,29 +91,28 @@
                     <div class="grid6">
                         <div class="fadebackground">THE CURIOSITY</div>
                     </div>
-                    <div class="grid">
+                    <div class="grid7">
                         <div class="fadebackground">MAKE IT FISHEYE</div>
                     </div>
 
                 </div>
+            </div>
+            <div class="morediv">
+                <button class="more1">SEE ALL</button>
             </div>
         </div>
 
         <footer class="final">
             <div class="finalleft">
                 <nav1>
-                    <div class="logo">
-                        <li class="logo">
+                    <div class="logo1">
+                        <li class="logo1">
                             <a href="#">
                                 <img src="images/logo.svg" alt="" class="logoImage1">
                             </a>
                         </li>
                         
                     </div>
-                    <input type="checkbox" id="click">
-                    <label for="click" class="menu-btn">
-                        <i class="fas fa-bars"></i>
-                    </label>
                     
                     
                     
@@ -136,15 +136,40 @@
 
             <div class ="finalright">
                 <div class="finalrighttop">
-                    
+
+                    <nav2>
+                                          
+                        <ul class="menu2">
+                        <!-- <div class="listItems"> -->
+                            <li class="item"><a href="#" class="decorate">
+                                <img src="images/icon-facebook.svg" alt="">
+                            </a></li>
+                            <li class="item"><a href="#" class="decorate">
+                                <img src="images/icon-twitter.svg" alt="">
+                            </a></li>
+                            <li class="item"><a href="#" class="decorate">
+                                <img src="images/icon-pinterest.svg" alt="">
+                            </a></li>
+                            <li class="item"><a href="#" class="decorate">
+                                <img src="images/icon-instagram.svg" alt="">
+                            </a></li>
+                            
+                        <!-- </div> -->
+                        </ul>
+    
+    
+                    </nav>
+
                 </div>
                 <div class="finalrightbottom">
-                    <p class="copywright"><span>c</span>_2021 Loopstudios. All rights reserved.</p>
+                    <p class="copywright"><span class="circled_c">c</span> 2021 Loopstudios. All rights reserved.</p>
                 </div>
 
             </div>
         </footer>
 
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
